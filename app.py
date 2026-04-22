@@ -175,7 +175,9 @@ def download_pdf():
         print("PDF ERROR:", str(e))
         return jsonify({"error": str(e)}), 500
 
+# Cloud Run uses Gunicorn to serve this app
 
 # -------------------- RUN SERVER --------------------
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+ #   app.run(debug=True)
+
